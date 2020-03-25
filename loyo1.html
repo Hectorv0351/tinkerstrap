@@ -12,12 +12,66 @@
     
     
     <style>
+    body{
+        height: 10000px;
+      }
       
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+      <ul class="navbar-nav">
+        <a class="nav-brand">
+          <img src="https://images.emojiterra.com/google/android-10/512px/1f44d.png" style="width:40px">
+        </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GoodNews Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Corona News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"> Coming Soon! </a>
+        </li>
+      </ul>
+    </nav>
     
+    <div id="accordion">
+      
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseOne"> 
+          Advice for yesterday
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+              Don't go outside
+          </div>
+        </div>
+        </div>
+        
+          <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Advice for today
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Remember to wash your hands :)
+      </div>
+    </div>
+  </div>
+      </div>
     
+    <div class="alert alert-danger alert-disamissible fade show" style="position:fixed; bottom:0; left:0;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Problem!</strong> it seems like schools are closed for now
+    </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
